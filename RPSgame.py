@@ -1,15 +1,16 @@
 import random
 things = ["rock", "paper", "scissors"]
 computer_turn = random.choice(things)
-human_turn = input("Izvēlies. rock, paper vai scissors:").lower()
-print('Dators izvēlas: ' + computer_turn)
+human_turn = input("Ievadi savu lietu: ").lower()
+print("Computer chooses: " + computer_turn)
 if human_turn == computer_turn:
-    print("Neizšķirts")
-elif human_turn == "rock" and computer_turn == "paper":
-    print("Dators uzvar!")
-elif human_turn == "paper" and computer_turn == "scissors":
-    print("Dators uzvar!")
-elif human_turn == "scissors" and computer_turn == "rock":
-    print("Dators uzvar!")
+    print("Tie")
+elif computer_turn == "rock" and human_turn == "paper":
+    print("Human wins")
+elif computer_turn == "paper" and human_turn == "scissors":
+    print("Human wins")
+elif computer_turn == "scissors" and human_turn == "rock":
+    print("Human wins")
 else:
-    print("Tu uzvarēji!")
+    print("Computer wins")
+    
